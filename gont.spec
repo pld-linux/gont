@@ -1,7 +1,7 @@
 Summary:	The Gont compiler
 Summary(pl):	Kompilator jêzyka Gont
 Name:		gont
-Version:	0.0.8
+Version:	0.0.10
 Release:	1
 License:	BSD-like
 Group:		Development/Languages
@@ -36,7 +36,8 @@ silny i ogólny. Zarówno kompilator jak i jêzyk podlegaj± silnemu rozwojowi.
 
 %build
 ./configure \
-	-prefix %{_prefix}
+	-prefix %{_prefix} \
+	-ksic %{__cc}
 
 %{__make} boot BOOT_OPT_FLAGS="%{rpmcflags}"
 
@@ -53,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/{faq,manual,hacker,proposals} doc/gont.vim COPYRIGHT NEWS TODO
+%doc doc/{faq,manual,hacker,proposals,libref} doc/gont.vim COPYRIGHT NEWS TODO
 %doc lib/*/*.gi
 %attr(755,root,root) %{_bindir}/*
 %{_libdir}/%{name}
