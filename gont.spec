@@ -1,7 +1,7 @@
 Summary:	The Gont compiler
 Summary(pl):	Kompilator jêzyka Gont
 Name:		gont
-Version:	0.0.4
+Version:	0.0.5
 Release:	1
 License:	BSD-like
 Group:		Development/Languages
