@@ -1,7 +1,7 @@
 Summary:	The Gont compiler
 Summary(pl):	Kompilator jêzyka Gont
 Name:		gont
-Version:	0.0.5
+Version:	0.0.7
 Release:	1
 License:	BSD-like
 Group:		Development/Languages
@@ -9,11 +9,11 @@ Source0:	ftp://ftp.kernel.pl/pub/People/malekith/gont/%{name}-%{version}.tar.bz2
 URL:		http://gont.pld.org.pl/
 BuildRequires:	bison
 BuildRequires:	gc-devel
+BuildRequires:	gcc-ksi
 BuildRequires:	gperf
 BuildRequires:	libxml2-devel
-BuildRequires:	pkgconfig
-BuildRequires:	gcc-ksi
 BuildRequires:	perl
+BuildRequires:	pkgconfig
 Requires:	gcc-ksi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -43,14 +43,18 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT/%{_examplesdir}/%{name}-%{version}
+cp doc/tutorial/* $RPM_BUILD_ROOT/%{_examplesdir}/%{name}-%{version}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/{faq,manual,hacker} doc/gont.vim COPYRIGHT NEWS TODO
-%doc lib/*/*.gi t/hello.g*
+%doc doc/{faq,manual,hacker,proposals} doc/gont.vim COPYRIGHT NEWS TODO
+%doc lib/*/*.gi
 %attr(755,root,root) %{_bindir}/*
 %{_libdir}/%{name}
 %{_includedir}/%{name}
 %{_mandir}/man*/*
+%{_examplesdir}/%{name}-%{version}
