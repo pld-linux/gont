@@ -6,6 +6,7 @@ Release:	1
 License:	BSD-like
 Group:		Development/Languages
 Source0:	ftp://ftp.kernel.pl/pub/People/malekith/gont/%{name}-%{version}.tar.bz2
+# Source0-md5:	03a48e9c9976d9011b8db9f962a6f3ae
 URL:		http://gont.pld.org.pl/
 BuildRequires:	bison
 BuildRequires:	gc-devel
