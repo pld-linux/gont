@@ -40,15 +40,17 @@ silny i ogólny. Zarówno kompilator jak i jêzyk podlegaj± silnemu rozwojowi.
 	-prefix %{_prefix} \
 	-ksic %{__cc}
 
-%{__make} boot BOOT_OPT_FLAGS="%{rpmcflags}"
+%{__make} boot \
+	BOOT_OPT_FLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT/%{_examplesdir}/%{name}-%{version}
-cp doc/tutorial/* $RPM_BUILD_ROOT/%{_examplesdir}/%{name}-%{version}
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp doc/tutorial/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
