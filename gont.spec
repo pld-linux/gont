@@ -1,7 +1,7 @@
 Summary:	The Gont compiler
 Summary(pl):	Kompilator jêzyka Gont
 Name:		gont
-Version:	0.0.7
+Version:	0.0.8
 Release:	1
 License:	BSD-like
 Group:		Development/Languages
@@ -11,10 +11,12 @@ BuildRequires:	bison
 BuildRequires:	gc-devel
 BuildRequires:	gcc-ksi
 BuildRequires:	gperf
+BuildRequires:	iconv
 BuildRequires:	libxml2-devel
 BuildRequires:	perl
 BuildRequires:	pkgconfig
 Requires:	gcc-ksi
+Requires:	iconv
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
