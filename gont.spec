@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Gont tries to merge imperative look and feel of C with with polymorphic
 typesystem, higher order functions and high level data structures. It
-is meant to be easy to learn and safe but yet powerful and general. 
+is meant to be easy to learn and safe but yet powerful and general.
 Both compiler and language are under heavy development.
 
 %description -l pl
