@@ -1,5 +1,5 @@
 Summary:	The Gont compiler
-Summary(pl):	Kompilator jêzyka Gont
+Summary(pl.UTF-8):   Kompilator jÄ™zyka Gont
 Name:		gont
 Version:	0.0.10
 Release:	1
@@ -26,11 +26,11 @@ typesystem, higher order functions and high level data structures. It
 is meant to be easy to learn and safe but yet powerful and general.
 Both compiler and language are under heavy development.
 
-%description -l pl
-Gont próbuje ³±czyæ imperatywny styl znany z C z polimorficznym systemem
-typów, funkcjami wy¿szych rzêdów oraz wysoko-poziomowymi strukturami danych.
-W za³o¿eniach ma byæ ³atwy do nauczenia i bezpieczny ale mimo to
-silny i ogólny. Zarówno kompilator jak i jêzyk podlegaj± silnemu rozwojowi.
+%description -l pl.UTF-8
+Gont prÃ³buje Å‚Ä…czyÄ‡ imperatywny styl znany z C z polimorficznym systemem
+typÃ³w, funkcjami wyÅ¼szych rzÄ™dÃ³w oraz wysoko-poziomowymi strukturami danych.
+W zaÅ‚oÅ¼eniach ma byÄ‡ Å‚atwy do nauczenia i bezpieczny ale mimo to
+silny i ogÃ³lny. ZarÃ³wno kompilator jak i jÄ™zyk podlegajÄ… silnemu rozwojowi.
 
 %prep
 %setup -q
