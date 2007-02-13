@@ -1,5 +1,5 @@
 Summary:	The Gont compiler
-Summary(pl.UTF-8):   Kompilator języka Gont
+Summary(pl.UTF-8):	Kompilator języka Gont
 Name:		gont
 Version:	0.0.10
 Release:	1
